@@ -8,18 +8,20 @@
 Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+ This lab implements strings and classes to test results expected verse results gotten of a variety of factors. 
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 1
 
-Grace days remaining: < # >/5
+Grace days remaining: 3/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+none
 
 ## REFERENCES:
- < List any outside resources used >
+https://www.cs.utah.edu/~germain/PPS/Topics/strings.html)
+https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_caesar_cipher.htm
+https://stackoverflow.com/questions/8886947/caesar-cipher-function-in-python
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+none
