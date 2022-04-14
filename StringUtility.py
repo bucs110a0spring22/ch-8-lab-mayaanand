@@ -26,20 +26,20 @@ class StringUtility:
     for i in self.string:
       sum += ord(i)
     return sum
-  def cipher(self): 
+  def cipher(self):
     newString = ""
     for i in self.string:
-      if i.isalpha():
-        if i.islower():
-          if ord(i) + len(self.string) > 122:
-            newString += chr(ord(i) + len(self.string) - 26)
-          else:
-            newString += chr(ord(i) + len(self.string))
-        else:
-          if ord(i) + len(self.string) > 90:
-            newString += chr(ord(i) + len(self.string) - 26)
-          else:
-            newString += chr(ord(i) + len(self.string))
+      value = ord(i)
+      if value <= 90 and value >= 65:
+        value += len(self.string) % 26
+        if value > 90:
+          value -= 26
+        newString += chr(int(value))
+      elif value <= 122 and value >= 97:
+        value += len(self.string) % 26
+        if value > 122:
+          value -= 26
+        newString += chr(int(value))
       else:
         newString += i
     return newString
